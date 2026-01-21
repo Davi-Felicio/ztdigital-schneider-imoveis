@@ -17,7 +17,7 @@ const About = () => {
               Sobre Mim
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
-              Ana Oliveira
+              Schneider Imóveis
             </h2>
             <p className="text-muted-foreground font-body text-lg leading-relaxed mb-6">
               Sou corretora de imóveis há mais de 10 anos, especializada em imóveis de 

@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="font-display text-2xl font-semibold text-foreground">
-              Ana Oliveira
+              Schneider
             </span>
             <span className="text-muted-foreground text-sm font-body">Imóveis</span>
           </div>

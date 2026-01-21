@@ -5,13 +5,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="font-display text-xl font-semibold text-primary-foreground">
-              Ana Oliveira
+              Schneider
             </span>
             <span className="text-primary-foreground/60 text-sm font-body">Imóveis</span>
           </div>
           
           <p className="text-primary-foreground/60 font-body text-sm text-center">
-            © {new Date().getFullYear()} Ana Oliveira Imóveis. Todos os direitos reservados.
+            © {new Date().getFullYear()} Schneider Imóveis. Todos os direitos reservados.
           </p>
           
           <p className="text-primary-foreground/60 font-body text-sm">
