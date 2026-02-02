@@ -3,7 +3,11 @@ import PropertyCard from "./PropertyCard";
 const properties = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&auto=format&fit=crop",
+    ],
     title: "Casa em Condomínio Fechado",
     location: "Alphaville, Barueri - SP",
     price: "R$ 1.850.000",
@@ -15,7 +19,11 @@ const properties = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop",
+    ],
     title: "Apartamento Alto Padrão",
     location: "Jardins, São Paulo - SP",
     price: "R$ 2.400.000",
@@ -27,7 +35,11 @@ const properties = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600573472591-ee6c8e695f07?w=800&auto=format&fit=crop",
+    ],
     title: "Cobertura Duplex",
     location: "Moema, São Paulo - SP",
     price: "R$ 3.200.000",
@@ -39,7 +51,11 @@ const properties = [
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566752734-2a0cd04b4aa4?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&auto=format&fit=crop",
+    ],
     title: "Casa Térrea Moderna",
     location: "Granja Viana, Cotia - SP",
     price: "R$ 12.000/mês",
@@ -51,7 +67,11 @@ const properties = [
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&auto=format&fit=crop",
+    ],
     title: "Apartamento Garden",
     location: "Vila Mariana, São Paulo - SP",
     price: "R$ 980.000",
@@ -63,7 +83,11 @@ const properties = [
   },
   {
     id: 6,
-    image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566753104-685f4f24cb4d?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=800&auto=format&fit=crop",
+    ],
     title: "Studio Mobiliado",
     location: "Pinheiros, São Paulo - SP",
     price: "R$ 4.500/mês",
