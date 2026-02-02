@@ -1,5 +1,6 @@
 import { Bed, Bath, Car, Maximize, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { Button } from "./ui/button";
 
 interface PropertyCardProps {
   images: string[];
@@ -116,13 +117,18 @@ const PropertyCard = ({
           </div>
         </div>
         
-        <div className="pt-4 border-t border-border">
-          <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">
-            Valor
-          </p>
-          <p className="font-display text-2xl font-semibold text-foreground">
-            {price}
-          </p>
+        <div className="flex items-center justify-between pt-4 border-t border-border">
+          <div>
+            <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">
+              Valor
+            </p>
+            <p className="font-display text-2xl font-semibold text-foreground">
+              {price}
+            </p>
+          </div>
+          <Button variant="outline" size="sm">
+            Contato
+          </Button>
         </div>
       </div>
     </div>
