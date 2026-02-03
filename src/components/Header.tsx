@@ -8,7 +8,11 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <img src={logo} alt="Schneider Imóveis" className="h-12 w-auto" />
+            <img
+              src={logo}
+              alt="Schneider Imóveis"
+              className="h-14 w-auto object-contain sm:h-16 md:h-20"
+            />
           </a>
           
           <nav className="hidden md:flex items-center gap-8">
@@ -24,12 +28,15 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-4">
-            <a href="tel:+5511999999999" className="hidden sm:flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="https://wa.me/5543998737544"
+              className="hidden sm:flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Phone className="w-4 h-4" />
-              <span className="text-sm font-body">(11) 99999-9999</span>
+              <span className="text-sm font-body">(43) 99873-7544</span>
             </a>
-            <Button variant="elegant" size="sm">
-              Fale Comigo
+            <Button variant="elegant" size="sm" asChild>
+              <a href="https://wa.me/5543998737544">Fale Comigo</a>
             </Button>
           </div>
         </div>

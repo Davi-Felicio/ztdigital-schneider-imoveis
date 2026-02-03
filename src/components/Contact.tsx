@@ -19,8 +19,8 @@ const Contact = () => {
             </p>
             
             <div className="space-y-6">
-              <a 
-                href="tel:+5511999999999"
+              <a
+                href="https://wa.me/5543998737544"
                 className="flex items-center gap-4 text-primary-foreground/80 hover:text-primary-foreground transition-colors group"
               >
                 <div className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center group-hover:bg-primary-foreground/20 transition-colors">
@@ -28,7 +28,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-body text-sm text-primary-foreground/60">Telefone</p>
-                  <p className="font-body text-lg">(11) 99999-9999</p>
+                  <p className="font-body text-lg">(43) 99873-7544</p>
                 </div>
               </a>
               
@@ -41,7 +41,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-body text-sm text-primary-foreground/60">E-mail</p>
-                  <p className="font-body text-lg">ana@example.com</p>
+                  <p className="font-body text-lg">contato@schneiderimoveis.com</p>
                 </div>
               </a>
               
@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-body text-sm text-primary-foreground/60">Localização</p>
-                  <p className="font-body text-lg">São Paulo, SP</p>
+                  <p className="font-body text-lg">Toledo, PR</p>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                 <input 
                   type="tel"
                   className="w-full bg-primary-foreground/10 border border-primary-foreground/20 rounded-md px-4 py-3 font-body text-primary-foreground placeholder:text-primary-foreground/40 focus:outline-none focus:border-primary-foreground/40 transition-colors"
-                  placeholder="(11) 99999-9999"
+                  placeholder="(43) 99873-7544"
                 />
               </div>
               <div>

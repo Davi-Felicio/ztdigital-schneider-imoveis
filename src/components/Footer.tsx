@@ -6,7 +6,11 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <a href="/" className="flex items-center">
-            <img src={logo} alt="Schneider Imóveis" className="h-10 w-auto brightness-0 invert" />
+            <img
+              src={logo}
+              alt="Schneider Imóveis"
+              className="h-12 w-auto object-contain brightness-0 invert sm:h-14 md:h-16"
+            />
           </a>
           
           <p className="text-primary-foreground/60 font-body text-sm text-center">

@@ -6,10 +6,10 @@ interface PropertyCardProps {
   images: string[];
   title: string;
   location: string;
-  price: string;
-  bedrooms: number;
-  bathrooms: number;
-  parking: number;
+  price?: string;
+  bedrooms?: number;
+  bathrooms?: number;
+  parking?: number;
   area: number;
   type: string;
 }
@@ -26,6 +26,7 @@ const PropertyCard = ({
   type,
 }: PropertyCardProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const displayPrice = price?.trim() ? price : "Negociação via contato";
 
   const goToPrevious = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -99,18 +100,24 @@ const PropertyCard = ({
         </div>
         
         <div className="flex items-center gap-4 mb-4 text-muted-foreground">
-          <div className="flex items-center gap-1.5">
-            <Bed className="w-4 h-4" />
-            <span className="text-sm font-body">{bedrooms}</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <Bath className="w-4 h-4" />
-            <span className="text-sm font-body">{bathrooms}</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <Car className="w-4 h-4" />
-            <span className="text-sm font-body">{parking}</span>
-          </div>
+          {typeof bedrooms === "number" && bedrooms > 0 && (
+            <div className="flex items-center gap-1.5">
+              <Bed className="w-4 h-4" />
+              <span className="text-sm font-body">{bedrooms}</span>
+            </div>
+          )}
+          {typeof bathrooms === "number" && bathrooms > 0 && (
+            <div className="flex items-center gap-1.5">
+              <Bath className="w-4 h-4" />
+              <span className="text-sm font-body">{bathrooms}</span>
+            </div>
+          )}
+          {typeof parking === "number" && parking > 0 && (
+            <div className="flex items-center gap-1.5">
+              <Car className="w-4 h-4" />
+              <span className="text-sm font-body">{parking}</span>
+            </div>
+          )}
           <div className="flex items-center gap-1.5">
             <Maximize className="w-4 h-4" />
             <span className="text-sm font-body">{area}m²</span>
@@ -123,11 +130,11 @@ const PropertyCard = ({
               Valor
             </p>
             <p className="font-display text-2xl font-semibold text-foreground">
-              {price}
+              {displayPrice}
             </p>
           </div>
-          <Button variant="outline" size="sm">
-            Contato
+          <Button variant="outline" size="sm" asChild>
+            <a href="https://wa.me/5543998737544">Contato</a>
           </Button>
         </div>
       </div>
