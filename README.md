@@ -1,4 +1,4 @@
-# Dream Property Showcase
+# Schneider Imóveis
 
 Landing page para divulgação de imóveis da Schneider Imóveis.
 
